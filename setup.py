@@ -254,13 +254,13 @@ class develop(_develop):
 
 
 setup(
-    name="secp256k1",
-    version="0.13.2",
+    name="test_s256_wheels",
+    version="0.0.1",
 
-    description='FFI bindings to libsecp256k1',
-    url='https://github.com/ludbb/secp256k1-py',
-    author='Ludvig Broberg',
-    author_email='lud@tutanota.com',
+    description='FFI bindings Tests 4 s256k1',
+    url='https://github.com/TeoChadcky/secp256k1-py',
+    author='Teo (copy of Ludvig Broberg code)',
+    author_email='TeoChadcky@tutanota.com',
     license='MIT',
 
     setup_requires=['cffi>=1.3.0', 'pytest-runner==2.6.2'],
@@ -268,7 +268,7 @@ setup(
     tests_require=['pytest==2.8.7'],
 
     packages=find_packages(exclude=('_cffi_build', '_cffi_build.*', 'libsecp256k1')),
-    ext_package="secp256k1",
+    ext_package="test_s256_wheels",
     cffi_modules=[
         "_cffi_build/build.py:ffi"
     ],
