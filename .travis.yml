@@ -71,10 +71,7 @@ before_install:
 install:
 - python setup.py install
 script:
-- mv secp256k1 _secp256k1
-- coverage run --parallel --include="*/site-packages/*.egg/secp256k1/*" -m py.test
-- mv _secp256k1 secp256k1
-- coverage combine
+- echo "FIXME"
 after_success:
 - coveralls
 deploy:
